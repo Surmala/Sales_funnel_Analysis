@@ -27,7 +27,7 @@ SQL-based e-commerce funnel analysis to identify drop-offs ,sourceperformance,co
 The Dataset (**`user_events.csv`**) conatins user-level e-commerce event logs with fields `user_id`,`event_type`,`event_date`,`traffic_source` and `amount`.Events tracked:`page_view` ,`add_to_cart`,`checkout_start`,`payment_info` and `purchase`.
 
 # 🚪SQL Views
-The analysis is powered by 4 SQL views.View the full SQL here:[`sales_funnel_analysis.sql`](./sales_funnel_analysis.sql)
+The analysis is powered by 4 SQL views.View the full SQL here:[`sql_create_views.sql`](./sql_create_views.sql)
 | View |Description|
 |------|-----------|
 |`vw_funnel_conversion`|Stage-by-stage funnel with conversion rates|
