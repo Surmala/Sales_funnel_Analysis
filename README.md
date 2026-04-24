@@ -9,6 +9,7 @@ SQL-based e-commerce funnel analysis to identify drop-offs ,sourceperformance,co
 
 
 
+#📊 Download the dashboard: [`sales_funnel.pbix`](./powerbi/sales_funnel.pbix)
 
 # 📁 Project Stucture
 ```text
