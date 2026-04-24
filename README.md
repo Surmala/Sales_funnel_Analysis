@@ -1,5 +1,5 @@
 # 🛒 E-Commerce Sales Funnel Analysis
-SQL-based e-commerce funnel analysis to identify drop-offs ,sourceperformance,conversion timing and revenue opportunities -Built using MySQL views on raw event level data.
+SQL-based e-commerce funnel analysis to identify drop-offs ,source performance,conversion timing and revenue opportunities -Built using MySQL views on raw event level data.
 
 ------------------------------------------------------------------------------------------------------------------
 # 🖼️ Dashboard Preview 
@@ -13,7 +13,7 @@ SQL-based e-commerce funnel analysis to identify drop-offs ,sourceperformance,co
 
 ### 📊 Download the dashboard: [`sales_funnel_dashboard.pbix`](./powerbi/sales_funnel_dashboard.pbix)
 
-# 📁 Project Stucture
+# 📁 Project Structure
 ```text
 ├── assets/
 │   └── Dashboard_preview.png      # Dashboard screenshot
@@ -27,16 +27,16 @@ SQL-based e-commerce funnel analysis to identify drop-offs ,sourceperformance,co
 ```
 
 # 🔍 About the Dataset
-The Dataset (**`user_events.csv`**) conatins user-level e-commerce event logs with fields `user_id`,`event_type`,`event_date`,`traffic_source` and `amount`.Events tracked:`page_view` ,`add_to_cart`,`checkout_start`,`payment_info` and `purchase`.
+The Dataset (**`user_events.csv`**) contains user-level e-commerce event logs with fields `user_id`,`event_type`,`event_date`,`traffic_source` and `amount`.Events tracked:`page_view` ,`add_to_cart`,`checkout_start`,`payment_info` and `purchase`.
 
 # 🚪SQL Views
 The analysis is powered by 4 SQL views.View the full SQL here:[01_create_views.sql](./sql/01_create_views.sql)
 | View |Description|
 |------|-----------|
 |`vw_funnel_conversion`|Stage-by-stage funnel with conversion rates|
-|`vw-source_performance`|Funnel breakdown by traffic source|
+|`vw_source_performance`|Funnel breakdown by traffic source|
 |`vw_conversion_time`|Average time between funnel stages|
-|`vw_revenue summary`|Revenue KPIs including AOV and revenue per visitor|
+|`vw_revenue_summary`|Revenue KPIs including AOV and revenue per visitor|
 
 # 📈 Analysis
 
@@ -76,7 +76,7 @@ View → Cart has the lowest conversion rate, further analysis is needed to iden
 | Social   |  1253 |   171 |        84 |         14% |              7% |             49% | Weakest source, major drop at first stage |
 
 ### 💡Key Insight:
-Social media generates high traffic (1253 views) but shows the lowest conversion efficiency, with only -14% of users reach cart and 7% complete purchases.
+Social media generates high traffic (1253 views) but shows the lowest conversion efficiency, with only 14% of users reach cart and 7% complete purchases.
 Email generates fewer visits (445 views) but delivers the highest purchase conversion (34%), indicating stronger user intent and better targeting.
 
 ## 4.Time to Conversion Analysis:
