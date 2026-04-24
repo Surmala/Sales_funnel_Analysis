@@ -3,6 +3,7 @@ SQL-based e-commerce funnel analysis to identify drop-offs ,sourceperformance,co
 
 ------------------------------------------------------------------------------------------------------------------
 # 🖼️ Dashboard Preview 
+
 ![Dashboard Preview](./assets/Dashboard_preview.png)
 
 
